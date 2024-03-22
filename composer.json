@@ -10,10 +10,13 @@
         "laravel/jetstream": "^5.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "livewire/livewire": "^3.0"
+        "laravel/ui": "^4.5",
+        "livewire/livewire": "^3.0",
+        "spatie/laravel-permission": "^6.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "laravel-lang/lang": "^14.6",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
