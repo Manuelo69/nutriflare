@@ -16,6 +16,10 @@ return new class extends Migration {
             $table->integer('nota');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedBigInteger('rutina_id')->nullable();
+            $table->foreign('rutina_id')->references('id')->on('rutinas')->onDelete('cascade');
+            $table->unsignedBigInteger('dieta_id')->nullable();
+            $table->foreign('dieta_id')->references('id')->on('dietas')->onDelete('cascade');
             $table->timestamps();
         });
     }

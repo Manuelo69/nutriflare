@@ -14,8 +14,10 @@ return new class extends Migration {
             $table->id();
             $table->string('nombre_plato');
             $table->string('slug');
+            $table->string('imagen');
             $table->string('ingredientes');
             $table->string('elaboracion');
+            $table->integer('tiempo');
             $table->enum('comida_dia', ['desayuno', 'comida', 'merienda', 'cena']);
             $table->boolean('aprobado')->default(false);
             $table->timestamps();

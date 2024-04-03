@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->string('nombre_ejercicio');
             $table->string('slug');
             $table->string('imagen');
-            $table->text('Explicacion');
+            $table->text('explicacion');
             $table->enum('musculos', ['pierna', 'triceps', 'biceps', 'pecho', 'espalda', 'abdominales', 'hombro']);
             $table->boolean('aprobado')->default(false);
             $table->timestamps();

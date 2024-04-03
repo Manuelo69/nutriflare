@@ -12,12 +12,12 @@ return new class extends Migration {
     {
         Schema::create('objetivos', function (Blueprint $table) {
             $table->id();
-            $table->string('altura');
-            $table->string('peso');
-            $table->string('grasa_corporal')->nullable();
-            $table->string('imc')->nullable();
-            $table->string('minutos_cardio')->nullable();
-            $table->string('horas_sueño')->nullable();
+            $table->integer('altura');
+            $table->integer('peso');
+            $table->integer('grasa_corporal')->nullable();
+            $table->integer('imc')->nullable();
+            $table->integer('minutos_cardio')->nullable();
+            $table->integer('horas_sueño')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
