@@ -22,5 +22,8 @@ class DatabaseSeeder extends Seeder
         ]);*/
         DB::table('ejercicios')->delete();
         $this->call(EjerciciosSeeder::class);
+        DB::table('platos')->delete();
+        DB::table('valores_nutricionales')->delete();
+        $this->call(PlatosSeeder::class);
     }
 }

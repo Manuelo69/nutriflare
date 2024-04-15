@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Ejercicio;
+use Exception;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -24,7 +25,7 @@ class EjerciciosSeeder extends Seeder
                 $e->explicacion = $ejercicio['explicacion'];
                 $e->imagen = "public/assets/{$ejercicio['imagen']}";
                 $e->save();
-            } catch (\Exception $e) {
+            } catch (Exception $e) {
                 $this->command->error('Error al insertar datos: ' . $e->getMessage());
             }
         }

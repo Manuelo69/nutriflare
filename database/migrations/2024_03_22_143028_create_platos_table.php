@@ -16,8 +16,7 @@ return new class extends Migration {
             $table->string('slug');
             $table->string('imagen');
             $table->string('ingredientes');
-            $table->string('elaboracion');
-            $table->integer('tiempo');
+            $table->text('elaboracion');
             $table->enum('comida_dia', ['desayuno', 'comida', 'merienda', 'cena']);
             $table->boolean('aprobado')->default(false);
             $table->timestamps();
