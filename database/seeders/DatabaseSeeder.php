@@ -25,5 +25,8 @@ class DatabaseSeeder extends Seeder
         DB::table('platos')->delete();
         DB::table('valores_nutricionales')->delete();
         $this->call(PlatosSeeder::class);
+        DB::table('users')->delete();
+        $this->call(UserSeeder::class);
+        User::factory(20)->create();
     }
 }
