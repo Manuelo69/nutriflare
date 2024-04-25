@@ -17,6 +17,11 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 custom: ['Open Sans', 'sans-serif'],
             },
+            colors: {
+                'azul': '#1A94D6',
+                'verde': '#43D32D',
+                'rojo': '#FF4B3E'
+            },
         },
     },
 
