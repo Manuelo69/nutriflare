@@ -3,7 +3,6 @@
         <x-slot name="logo">
             <img src="{{ asset('assets/imagenes/logoNutriflare.png') }}" alt="NutriflareLogo" class="h-60">
         </x-slot>
-
         <x-validation-errors class="mb-4" />
 
         <form method="POST" action="{{ route('register') }}">
